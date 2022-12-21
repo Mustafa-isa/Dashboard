@@ -733,3 +733,41 @@ font-size: 10px;
 .media .item i:hover{
     transform:rotate(360deg)
 }
+.project-table{
+    padding-top: 20px;
+    border-radius: 6px;
+    background-color: #666;
+    padding: 20px;
+    margin: 20px ;
+
+}
+.project-table{
+    overflow-x: auto;
+}
+@media(max-width:767px){
+    
+    .project-table {
+        display:none;
+    }
+}
+.project-table  table thead td{
+    padding: 15px;
+    background-color: #777;
+}
+.project-table  table td{
+    padding: 15px;
+    background-color: #888;
+    border-top: 1px solid #bbb;
+    border-left: 1px solid #bbb;
+}
+.project-table  table img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.project-table  table img:not(:first-child){
+    margin-left: -15px;
+}
+.stauts{
+    color:rgb(49, 49, 174);
+}
