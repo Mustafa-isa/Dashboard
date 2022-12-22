@@ -390,11 +390,13 @@ position: relative;
     transition: .5s;
     transform: scale(0);
 }
-.control .control-flex label:hover label::after{
-    transform: scale(1) rotate(360deg);  
+.control input:checked  + .label-hover::after{
+    transform: scale(1)
+     rotate(360deg);  
 }
 .control .control-flex input{
     outline: none;
     border: none;
     appearance: none;
+
 }
