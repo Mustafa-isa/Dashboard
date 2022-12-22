@@ -176,3 +176,225 @@ position: relative;
     top: 60px;
     border-radius: 3.5px;
 }
+.togg{
+    padding: 20px;
+   
+}
+.togg .animate{
+    position: relative;
+    transition: .5s;
+    width: 78px;
+
+
+    height: 32px;
+    background: #aaa;
+    border-radius: 16px;
+
+}
+.togg .animate::before{
+    content: "\f00d";
+    position: absolute;
+    font-weight: 900px;
+    font-family: 'FontAwesome';
+    top: 3px;
+    left: 8px;
+    display: block;
+    padding: 5px;
+    background: #888;
+    border-radius: 15px;
+    transition: .5s;
+}
+.togg:hover .animate{
+    background-color: rgb(165, 56, 56);
+
+}
+.togg:hover .animate::before{
+left: 60%;
+content: " \f00c";
+background-color: rgb(165, 56, 56);
+
+}
+
+.settings-grid{
+margin-top: 10px;
+padding: 20px;
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+gap: 10px;
+}
+@media(max-width:767px){
+    .settings-grid{
+        grid-template-columns:1fr;
+    }
+}
+.site-control{
+    padding: 20px;
+    border-radius: 6px;
+    background-color: #666;
+}
+ p {
+    font-size: 12px;
+    padding-top: 5px;
+    color: #eee;
+}
+.site-control-flex{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.site-control .field {
+    resize: none;
+    width: 100%;
+    margin-top: 10px;
+    height: 120px;
+    border-radius: 10px;
+    color: black;
+    outline: none;
+    border: none;
+    padding: 15px;
+
+}
+.site-control input{
+    outline: none;
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    color: black;
+    border-radius: 10px;
+    background-color: #4c0303;
+    color: #fff;
+    outline: none;
+    border: none;
+
+}  
+.generl-inf{
+    padding: 20px;
+    border-radius: 6px;
+    background-color: #666;
+}
+.generl-inf div{
+ 
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+.generl-inf div label{
+    padding-bottom: 4px;
+    font-family: 'Open Sans';
+    font-size: 12px;
+}
+.generl-inf div input{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 8px;
+    background: #fff;
+    color: black;
+
+}
+.generl-inf  a{
+    display: block;
+    width: 190px;
+    margin: auto;
+    margin-top: 20px;
+    background: #4c0303;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    transition: .5s;
+
+}
+.generl-inf  a:hover{
+    background-color: rgb(244, 162, 162);
+}
+.security {
+    font-size: 12px;
+    padding: 7px;
+    background: #3e1414;
+    border-radius: 5px;
+    transition: .3s;
+}
+.security:hover{
+    background-color: rgb(244, 162, 162);
+
+}
+.social{
+    padding: 20px;
+    border-radius: 6px;
+    background-color: #666;
+}
+.social .social-item{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    
+}
+.social .social-item i{
+    padding: 7px;
+    transition: 1s;
+    background-color: #888;
+}
+.social .social-item input{
+    outline: none;
+    color: black;
+    padding-left: 10px;
+    height: 30px;
+    width: 100%;
+    
+
+    border: none;
+}
+.social-item:focus-within i{
+    background: rgb(110, 19, 19);
+}
+.control{
+    padding: 20px;
+    border-radius: 6px;
+    background-color: #666; 
+}
+.control .control-flex{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+}
+.control .control-flex label::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 1px solid;
+    left: 2px;
+    top: 8%;
+    border-radius: 3px;
+}
+.control .control-flex label{
+    padding-left: 20px;
+    font-size: 15px;
+    font-family: serif;
+position: relative;
+}
+.control .control-flex label::after{
+    content: "\f00c";
+    position: absolute;
+    font-weight: 900px;
+    font-family: 'FontAwesome';
+    left: 5%;
+    font-size: 10px;
+    top: 13%;
+    color: blue;
+    background: #fff;
+    transition: .5s;
+    transform: scale(0);
+}
+.control .control-flex label:hover label::after{
+    transform: scale(1) rotate(360deg);  
+}
+.control .control-flex input{
+    outline: none;
+    border: none;
+    appearance: none;
+}
