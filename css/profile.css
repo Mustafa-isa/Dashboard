@@ -1,0 +1,284 @@
+.main-page{
+    display: flex;
+    min-height: 100vh;
+
+    background-color: #333;
+}
+.left{
+    position: relative;
+    width: 250px;
+    background-color: #111;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    color: white;
+
+}
+.right{
+    width: 100%;
+}
+.logo{
+    font-family: open  sans;
+
+}
+
+.logo::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: -1px;
+    top: 40px;
+    border-bottom: 5px solid red;
+    border-left: 5px solid red;
+    transition: .4s ease;
+}
+
+.logo::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 2px;
+    right: 15%;
+    border-top: 5px solid red;
+    border-right: 5px solid red;
+    transition: .4s ease;
+}
+.links{
+     margin-top: 20px;
+}
+.links ul li {
+    margin-bottom: 30px;
+    width: 90%;
+    transition: .3s ;
+    
+} 
+.active1{
+background-color: rgb(140, 31, 31);
+
+border-radius: 6px;
+
+} 
+.active:hover{
+    background-color: rgb(140, 31, 31);
+    
+    border-radius: 6px;
+    
+    } 
+
+.links ul li a{
+    padding: 15px;
+
+}
+.links ul li span{
+    display:-inline-block;
+    padding-right: 3px;
+}
+
+    @media(max-width:767px){
+        .left{
+            width: 65px;
+            padding: 8px;
+        }
+        .left .links ul li a span{
+            display: none;
+        }
+        .left .links ul li {
+            background: none;
+        }
+        .logo::after,.logo::before{
+            display: none;
+        }
+        .logo h2{
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }  
+        .search-section input{
+            width: 70px;
+        }
+
+     } 
+
+
+.header{
+    background-color: #222;
+    padding: 20px;
+    padding: 20px;
+
+
+}
+.search-section{
+    position: relative;
+
+}
+.search-section input{
+    padding-left: 30px;
+    border-radius: 10px;
+    outline: none;
+    height: 40px;
+    width: 200px;
+    transition: .3s;
+    color: black;
+}
+
+.search-section i{
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    z-index: 10;
+    color: black;
+    opacity: .5;
+}
+.search-section input:hover{
+    width: 210px;
+    
+}
+.noti{
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+    align-items: center;
+padding-left: 10px;
+position: relative;
+}
+.noti::before{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: red;
+    top: 10px;
+    left: 14px;
+}
+
+.h1 {
+    padding: 10px 20px ;
+    width: 220px;
+    margin:20px;
+    position: relative;
+}
+
+.h1::after{
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 7px;
+    border-radius: 3.5px;
+    background: #bbb;
+    top: 60px;
+}
+.h1::before{
+    position: absolute;
+    content: "";
+    width: 170px;
+    height: 7px;
+    background: #fff;
+    top: 60px;
+    border-radius: 3.5px;
+}
+.togg{
+    padding: 20px;
+   
+}
+.togg .animate{
+    position: relative;
+    transition: .5s;
+    width: 78px;
+
+
+    height: 32px;
+    background: #aaa;
+    border-radius: 16px;
+
+}
+.togg .animate::before{
+    content: "\f00d";
+    position: absolute;
+    font-weight: 900px;
+    font-family: 'FontAwesome';
+    top: 3px;
+    left: 8px;
+    display: block;
+    padding: 5px;
+    background: #888;
+    border-radius: 15px;
+    transition: .5s;
+}
+.togg:hover .animate{
+    background-color: rgb(165, 56, 56);
+
+}
+.togg:hover .animate::before{
+left: 60%;
+content: " \f00c";
+background-color: rgb(165, 56, 56);
+
+}
+.profile-general{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3px;
+    background-color: #666;
+    border-radius: 6px;
+    gap: 20px;
+    padding-top: 30px;
+}
+.photo{
+    text-align: center;
+    margin-top: 30px;
+    
+}
+.photo span{
+    display: block;
+    font-size: 12px;
+    color: #eee;
+}
+.profile-general .photo img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    
+}
+.profile-general .photo div{
+    position: relative;
+}
+.profile-general .photo .level{
+    width: 150px;
+    margin: 5px ;
+    height: 5px;
+    border-radius: 4px;
+    background: #eee;
+
+}
+.profile-general .photo .level-color{
+    position: absolute;
+    height: 5px;
+    width: 100px;
+    background: rebeccapurple;
+    border-radius: 5px;
+    top: 0;
+
+}
+
+.profile-general .photo i{
+    background-color: rgb(98 98 15);
+    color: #dddd10;
+}
+.information .item{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 50px;
+    
+}
+.information .item span {
+    font-size: 12px;
+    color: #999;
+    text-transform: lowercase;
+}
+.mm{
+    color: black;
+    padding-top: 20px;
+}
