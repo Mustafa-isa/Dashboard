@@ -222,11 +222,13 @@ background-color: rgb(165, 56, 56);
     border-radius: 6px;
     gap: 20px;
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 .photo{
     text-align: center;
     margin-top: 30px;
-    
+    border-right: 1px solid;
+
 }
 .photo span{
     display: block;
@@ -271,6 +273,8 @@ background-color: rgb(165, 56, 56);
     flex-wrap: wrap;
     align-items: center;
     height: 50px;
+    border-top: 1px solid;
+
     
 }
 .information .item span {
@@ -282,3 +286,85 @@ background-color: rgb(165, 56, 56);
     color: black;
     padding-top: 20px;
 }
+@media(max-width:767px){
+
+    .information .item{
+        border: none;
+
+    }
+    .photo{
+        border: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .later .skills
+}
+.later{
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.later .skills{
+    width: 300px;
+
+    padding: 20px;
+    background-color: #666;
+    border-radius: 6px;
+    margin-left: 10px;
+
+}
+.later .latest-newes{
+    flex: 2;
+    padding: 20px;
+    background-color: #666;
+    border-radius: 6px;
+    
+}
+.later  p{
+    font-size: 12px;
+    color: #aaa;
+    padding: 3px 10px
+}
+.later  h5{
+    font-size: 1.1em;
+}
+.later .skills div{
+    margin-bottom: 10px;
+}
+.later .skills div span{
+    display: inline-flex;
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 3px;
+    background: #999;
+}
+.latest-flex {
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
+.latest-flex img{
+    width: 40px;
+}
+.latest-flex .flex1{
+    display: flex;
+    gap: 5px;
+}
+.latest-flex .flex2{
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+}
+
+.latest-flex span{
+    font-size: 12px;
+}
+
